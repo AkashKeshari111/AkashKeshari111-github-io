@@ -1,0 +1,369 @@
+/* .home_div,.about_div,.project_div,.skill_div,.contact_div{
+    margin-top: 100px;
+} */
+
+
+
+.div_a{
+    display: flex;
+   justify-content: space-between;
+}
+
+.div_b{
+    /* border:1px solid rgb(255, 255, 255); */
+  
+    margin-left: 60px;
+    
+}
+
+.hii{
+    font-size: 50px;
+    color: #fff;
+    font-family: cursive;
+    padding-bottom: 20px;
+}
+
+.name{
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.im{
+    font-size:30px;
+    color: #fff;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.content {
+  position: relative;
+  /* border:1px solid white; */
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+  transform: translate(20%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    )}
+  
+  }
+
+
+  .img_div{
+    margin-top: -40px;
+    margin-left:300px;
+    border-radius: 100%;
+    border: 1px solid white;
+    width:300px;
+    height:300px;
+    overflow: hidden;
+  }
+
+  .job_title{
+    margin-top: 50px;
+    margin-left: 270px;
+    font-size: 25px;
+    color:white;
+  }
+
+.creative{
+    color:white;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+
+  
+  .h1 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+    
+  }
+  
+  .h1 span {
+    font-size: 40px;
+    margin-left: 30px;
+    color:white;
+    
+  }
+  
+  
+.message {
+    background-color: yellow;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 255px;
+   
+    animation: openclose 5s ease-in-out infinite;
+   
+  }
+  
+.word1, .word2, .word3{
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+  .img_div>img{
+    width: 100%;
+  }
+
+
+
+  @media all and (max-width:1100px) and (min-width:950px) {
+    .img_div{
+      margin-left:30px;
+    }
+  }
+  
+  @media all and (max-width:950px) and (min-width:800px) {
+    .img_div{
+      margin-left:-20px;
+      margin-top: -100px;
+    }
+  }
+  @media all and (max-width:800px) and (min-width:700px) {
+    .img_div{
+      margin-left:-190px;
+      margin-top: -230px;
+    }
+  }
+  @media all and (max-width:900px) and (min-width:800px) {
+    .img_div{
+      margin-top: -250px;
+      margin-left:-170px;
+      border-radius: 100%;
+      border: 1px solid white;
+      width:300px;
+      height:300px;
+      overflow: hidden;
+    }
+  }
+  @media all and (max-width:700px) and (min-width:500px) {
+    .img_div{
+      margin-top: -100px;
+      margin-left:-290px;
+      border-radius: 100%;
+      border: 1px solid white;
+      width:150px;
+      height:150px;
+      overflow: hidden;
+    }
+    
+  .hii{
+    font-size: 35px;
+ }
+ .im{
+   font-size: 20px;
+ }
+ .content{
+font-size: 35px;
+ }
+  }
+
+  
+@media all and (max-width:500px) and (min-width:350px) {
+  .img_div{
+    margin-top: -80px;
+    margin-left:-420px;
+    border-radius: 100%;
+    border: 1px solid white;
+    width:150px;
+    height:150px;
+    overflow: hidden;
+  }
+  
+  .hii{
+     font-size: 25px;
+  }
+  .im{
+    font-size: 18px;
+  }
+  .content{
+font-size: 25px;
+  }
+  .job_title{
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .creative{
+    font-size: 25px;
+    display: block;
+  }
+  .message{
+     display: none;
+  }
+
+  .abe{
+    display: none;
+  }
+}
+
+
+@media all and (max-width:350px) and (min-width:50px) {
+  .img_div{
+    margin-top: -120px;
+    margin-left:-520px;
+    border-radius: 100%;
+    border: 1px solid white;
+    width:150px;
+    height:150px;
+    overflow: hidden;
+  }
+  
+  .hii{
+     font-size: 25px;
+  }
+  .im{
+    font-size: 18px;
+  }
+  .content{
+font-size: 15px;
+  }
+  .job_title{
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .creative{
+    font-size: 25px;
+    display: block;
+  }
+  .message{
+     display: none;
+  }
+
+  .abe{
+    display: none;
+  }
+}

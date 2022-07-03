@@ -1,0 +1,134 @@
+
+
+
+
+
+.motion1{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    gap:20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.img_motion{
+    width:90px;
+    height: 90px;
+   
+   
+}
+
+.motion>h4{
+    font-size: 40px;
+    font-family: cursive;
+    margin-left: 80px;
+    margin-top: -90px;
+}
+
+.h4S{
+    margin-left: 10px;
+}
+
+
+
+
+
+@media all and (max-width:1100px) and (min-width:950px) {
+    .motion>h4{
+       
+        margin-top:0px;
+    }
+    .motion1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        gap:2px;
+      margin-left: 10px;
+      margin-right: 10px;
+     text-align: center;
+     margin-left: 70px;
+    }
+  
+  }
+
+  
+@media all and (max-width:900px) and (min-width:800px) {
+  
+
+.motion1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap:2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  
+  }
+
+
+  @media all and (max-width:600px) and (min-width:350px) {
+    .motion1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* justify-content:space-evenly; */
+        align-items: center;
+        margin-top: 100px;
+        gap:2px;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+    }
+
+    .motion>h4{
+      text-align: center;
+        margin-left: 1px;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+  }
+
+  @media all and (max-width:800px) and (min-width:600px) {
+ 
+.motion1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap:2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  }
+
+
+  
+@media all and (max-width:970px) and (min-width:900px) {
+    .motion1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap:2px;
+  margin-left: 30px;
+  
+}
+  }
+
+  @media all and (max-width:350px) and (min-width:50px) {
+    .motion1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        gap:2px;
+     
+      
+    }
+    .motion>h4{
+        text-align: center;
+          margin-left: 1px;
+          margin-right: 1px;
+          margin-top: 0px;
+      }
+}
