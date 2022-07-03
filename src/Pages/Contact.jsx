@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./contactc.css"
 import { IoMailUnreadOutline } from "react-icons/io5";
@@ -9,6 +9,42 @@ import {FiTwitter} from "react-icons/fi";
 import {AiFillGithub} from "react-icons/ai";
 
 const Contact = () => {
+
+ let initialvalue={
+    Sname:"",
+    Semail:""
+  }
+
+const [form,setForm]=useState(initialvalue)
+
+  const ref= useRef(null)
+  const emailRef= useRef()
+
+
+  const handleChange=(e)=>{
+    const {name,type,value}=e.target
+
+    setForm({...form,
+      [name]:value})
+  }
+
+  const onClickFocus=(e)=>{
+    e.preventDefault()
+    
+    if(form.Sname===""){
+      ref.current.focus()
+    }
+    else if(form.Semail===""){
+      emailRef.current.focus()
+    }
+    else{
+      alert("Your query is Send. Thank you")
+    }
+   
+setForm(form)
+
+   
+  }
   return (
 
     <div >
@@ -20,13 +56,13 @@ const Contact = () => {
        
       <div className='div_c1'>
        
-        <form>
+        <form  onSubmit={ onClickFocus}>
           <div className='i_divc'>
           <label>Name:</label></div><br/>
-          <input className='in1c' placeholder='Enter your name'/><br/><br/>
+          <input ref={ref} name="Sname" value={form.Sname} className='in1c' placeholder='Enter your name' onChange={handleChange}/><br/><br/>
           <div className='i_divc'>
           <label>Email:</label></div><br/>
-          <input className='in2c' placeholder='Enter your email'/><br/><br/>
+          <input ref={emailRef} name="email" value={form.Semail} className='in2c' placeholder='Enter your email' onChange={(e)=>(setForm(e.target.value))}/><br/><br/>
           <div className='i_divc'>
           <label>Message:</label></div><br/>
           <textarea className='area' placeholder='Enter your message...'></textarea><br/><br/>
