@@ -1,10 +1,5 @@
 import React from "react";
 import { HashLink as Link} from "react-router-hash-link";
-import About from "../Pages/About";
-import Contact from "../Pages/Contact";
-import Home from "../Pages/Home";
-import Project from "../Pages/Project";
-import Skill from "../Pages/Skill";
 import "./nav.css";
 import  {useState, useEffect} from 'react'
 import { FcMenu } from "react-icons/fc";
@@ -47,6 +42,7 @@ const Navbar = () => {
   }, [])
 
   return (
+    
     <nav className="nav">
       <div className="asd">
    
@@ -64,11 +60,11 @@ const Navbar = () => {
    </Link> */}
  </div>
     
-      {nav.map((el)=>(
+      {nav.map((el,index)=>(
      
 
 
-<Link  to={el.path} className="items">{el.title}</Link>
+<Link key={index}  to={el.path} className="items">{el.title}</Link>
 
       ))}
     
