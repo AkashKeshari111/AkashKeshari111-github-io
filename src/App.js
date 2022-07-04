@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
 
@@ -24,36 +24,36 @@ function App() {
         <div>
           <Navbar />
           <div>
-            <div class="section1 " id="home">
+            <div className="section1 " id="home">
               <h1>
                 <Home />
               </h1>
             </div>
 
-            <div class="section2 bg1" id="about">
-              <h1 class="revealUp">
+            <div className="section2 bg1" id="about">
+              <h1 className="revealUp">
                 <About />
               </h1>
             </div>
-            <div class="section3 bg2" id="skill">
-              <h1 class="revealUp">
+            <div className="section3 bg2" id="skill">
+              <h1 className="revealUp">
                 <Skill />
               </h1>
             </div>
-            <div class="section4 bg3" id="project">
-              <h1 class="revealUp">
+            <div className="section4 bg3" id="project">
+              <h1 className="revealUp">
                 {" "}
                 <Project />
               </h1>
             </div>
-            <div class="section5 bg4" id="contact">
-              <h1 class="revealUp">
+            <div className="section5 bg4" id="contact">
+              <h1 className="revealUp">
                 {" "}
                 <Contact />
               </h1>
             </div>
 
-            <div class="spacer s1">
+            <div className="spacer s1">
               <div>
                 <h2>My Website is made with <FcLike/> of you.</h2>
                 </div>

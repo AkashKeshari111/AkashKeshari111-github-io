@@ -45,9 +45,9 @@ const Project = () => {
     <div className='project_div'>
 
     <div>
-      {projects.map((el)=>(
-        <div className='div_p'>
-          <img className='img_p' src={el.src}/>
+      {projects.map((el,index)=>(
+        <div key={index} className='div_p'>
+          <img className='img_p' src={el.src} alt="loading..."/>
           <div>
             <div className='div_p1'>
             <h2 className='h2p'>{el.title}</h2>
