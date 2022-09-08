@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **MERN stack**
 
-- 👨‍💻 All of my projects are available at [https://the-awesome-akashkeshari2722000-gmail-com-site-db882.netlify.app](https://the-awesome-akashkeshari2722000-gmail-com-site-db882.netlify.app)
+- 👨‍💻 All of my projects are available at [https://netlify-thinks-akashkeshari2722000-gmail-com-is-great-16126.netlify.app](https://netlify-thinks-akashkeshari2722000-gmail-com-is-great-16126.netlify.app)
 
 - 💬 Ask me about **MERN**
 
