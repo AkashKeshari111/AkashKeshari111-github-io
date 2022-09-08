@@ -16,8 +16,7 @@ const About = () => {
           <br />
           <FcLandscape />
           <p>
-            I like playing cricket, listening music, travelling & watching
-            nature.
+            I like reading & listening hindi poem, listening music, travelling.
           </p>
           <br />
           <FcLike />

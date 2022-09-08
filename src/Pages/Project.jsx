@@ -28,7 +28,11 @@ const projects=[{src:"https://images.yourstory.com/cs/2/70651a302d6d11e9aa979329
                 title:"Coming Soon",
                 dis:"",
                 liveDemo:"//the-awesome-akashkeshari2722000-gmail-com-site-db882.netlify.app",
-                github:"" }
+                github:"" },
+
+
+
+              
               ]
 
 const Project = () => {
@@ -54,7 +58,7 @@ const Project = () => {
             <p className='pp'>{el.dis}</p>
             </div>
             <div className='div_btnp'>
-            <Link  to={el.liveDemo}> <button className='btn1p'>Demo</button> </Link>
+            <Link  to={el.liveDemo}> <button className='btn1p'>Live</button> </Link>
             <Link  to={el.github}> <button className="btn2p">Github</button> </Link>
             </div>
             </div>

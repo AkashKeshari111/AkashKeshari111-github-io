@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./all.css";
-import AkResume from "./AkResume.jpg";
+import myPic from "./myPic.jpg";
 const Home = () => {
   return (
     <div className="home_div" >
@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         <div className="img_div">
-          <img src={AkResume} />
+          <img src={myPic} />
         </div>
       </div>
     </div>

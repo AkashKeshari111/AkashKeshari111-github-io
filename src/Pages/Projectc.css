@@ -57,12 +57,13 @@
    color:white;
    border: 1px solid white;
    transition: .4s;
+   border-color: lightgray;
 }
 
 .div_btnp{
     margin-top: -15px;
     height: 10%;
-  
+    
 }
 
 .div_p1{
